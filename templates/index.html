@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌍 Choose the Country</h1>
+
+    <div class="game">
+
+        <div class="card">
+            <img src="https://flagcdn.com/w320/{{ country1[1] }}.png">
+            <div class="name">{{ country1[0] }}</div>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="card">
+            <img src="https://flagcdn.com/w320/{{ country2[1] }}.png">
+            <div class="name">{{ country2[0] }}</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
